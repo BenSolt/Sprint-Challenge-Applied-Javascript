@@ -19,10 +19,14 @@
 */
 
 
+
 function createCarousel(data) {
 //elements
 const carousel1 = document.createElement('div');
 const btnL = document.createElement('div');
+const img = documents.createElement('img');
+const img = documents.createElement('img');
+const img = documents.createElement('img');
 const img = documents.createElement('img');
 const btnR = document.createElement('div');
 
@@ -41,17 +45,22 @@ btnL.classList.add('left-button');
 btnR.classList.add('right-button');
 img.classList.add('img');
 
+//text content
+btnL.textContent = btnL;
+btnR.textContent = btnR;
 
 
 
+// BTN LEFT
  btnL.addEventListener('click', () => {
    console.log('Left button')
-// menu.classList.toggle("menu--open");
+
 });
 
+// BTN RIGHT
 btnR.addEventListener('click', () => {
   console.log('Right button')
-// menu.classList.toggle("menu--open");
+
 });
 
 
@@ -59,5 +68,5 @@ btnR.addEventListener('click', () => {
 return carousel1
 }
 
-const carous = document.querySelector('')
+const carous = document.querySelector('carousel')
 carous.appendChild(createCarousel())
